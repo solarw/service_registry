@@ -1,0 +1,16 @@
+test:
+  build: .
+  volumes:
+    - .:/src
+  working_dir: /src
+  command: behave
+service:
+  build: .
+  volumes:
+    - .:/src
+  working_dir: /src
+  environment:
+        - PYTHONPATH=/src
+  command: python ./bin/serviceregistry.py
+  ports:
+      - "8888:8888"

@@ -1,0 +1,2 @@
+aiohttp>=3,<3.1
+git+git://github.com/solarw/aiohttp-json-rpc@9dda76f0a7978ac70f00c3102291dcec1494f08c#egg=aiohttp-json-rpc-0.9.1-slw1
